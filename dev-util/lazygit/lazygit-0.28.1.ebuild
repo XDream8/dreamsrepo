@@ -290,7 +290,7 @@ SRC_URI="https://github.com/jesseduffield/${PN}/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="AGPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""

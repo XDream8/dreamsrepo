@@ -6,7 +6,7 @@ HOMEPAGE="https://github.com/The-Repo-Club/instawm"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz"
 
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ppc ppc64 x86"
+KEYWORDS="amd64"
 IUSE="xinerama"
 
 RDEPEND="
