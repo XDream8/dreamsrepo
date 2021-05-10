@@ -6,3 +6,9 @@ My Repository for Gentoo
 # eselect repository add dreamsrepo git https://github.com/XDream8/dreamsrepo.git
 # emerge --sync
 ```
+## Packages
+* [app-misc/fm6000](docs/fm6000.md)
+* [dev-util/lazygit](docs/lazygit.md)
+* [x11-misc/instawm-schemas](docs/instawm-schemas.md)
+* [x11-misc/wm-maim](docs/wm-maim.md)
+* [x11-wm/instawm](docs/instawm.md)
