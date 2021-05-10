@@ -288,7 +288,7 @@ HOMEPAGE="https://github.com/jesseduffield/lazygit"
 SRC_URI="https://github.com/jesseduffield/${PN}/archive/refs/tags/v${PV}.tar.gz
          ${EGO_SUM_SRC_URI}"
 
-LICENSE="AGPL-2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""

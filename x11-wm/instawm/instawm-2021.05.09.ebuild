@@ -5,7 +5,7 @@ DESCRIPTION="a dynamic window manager for X11"
 HOMEPAGE="https://github.com/The-Repo-Club/instawm"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz"
 
-LICENSE="AGPL-2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="xinerama"

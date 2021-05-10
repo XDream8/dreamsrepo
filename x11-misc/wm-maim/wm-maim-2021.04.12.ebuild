@@ -7,7 +7,7 @@ DESCRIPTION="maim (make image) takes screenshots of your desktop. It has options
 HOMEPAGE="https://github.com/The-Repo-Club/wm-maim"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz"
 
-LICENSE="AGPL-2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""

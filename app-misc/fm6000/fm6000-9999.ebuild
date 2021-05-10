@@ -9,7 +9,7 @@ DESCRIPTION="Simple Dilbert themed system info-fetching tool "
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
 EGIT_REPO_URI="https://github.com/anhsirk0/fetch-master-6000"
 
-LICENSE="AGPL-2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
