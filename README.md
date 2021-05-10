@@ -5,11 +5,7 @@ My Repository for Gentoo
 ```sh
 # eselect repository add dreamsrepo git https://github.com/XDream8/dreamsrepo.git
 ```
-### Sync
-**Using emerge**
-```sh
-# emerge --sync dreamsrepo
-```
+## Sync
 **Using emaint**
 ```sh
 # emaint sync -r dreamsrepo
