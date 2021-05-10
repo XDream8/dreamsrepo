@@ -20,7 +20,6 @@ BDEPEND=""
 
 src_install() {
 
-	exeinto /usr/bin
-	newexe "${WORKDIR}"/"${P}"/fm6000.pl fm6000
+	newbin "${S}"/fm6000.pl fm6000
 
 }
