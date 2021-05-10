@@ -4,8 +4,17 @@ My Repository for Gentoo
 ## Add this repository
 ```sh
 # eselect repository add dreamsrepo git https://github.com/XDream8/dreamsrepo.git
-# emerge --sync
 ```
+### Sync
+**Using emerge**
+```sh
+# emerge --sync dreamsrepo
+```
+**Using emaint**
+```sh
+# emaint sync -r dreamsrepo
+```
+
 ## Packages
 * [app-misc/fm6000](docs/fm6000.md)
 * [dev-util/lazygit](docs/lazygit.md)
