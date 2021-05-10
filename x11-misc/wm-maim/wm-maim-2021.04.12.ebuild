@@ -3,9 +3,9 @@
 
 EAPI=7
 
-DESCRIPTION="maim (make image) takes screenshots of your desktop. It has options to take only a region, and relies on slop to query for regions. maim is supposed to be an improved scrot. "
+DESCRIPTION="maim (make image) takes screenshots of your desktop."
 HOMEPAGE="https://github.com/The-Repo-Club/wm-maim"
-SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz"
+SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -18,6 +18,5 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_install() {
-	exeinto /usr/bin
-	newexe "${WORKDIR}"/"${P}"/usr/bin/wm-maim wm-maim
+	dobin "${S}"/usr/bin/wm-maim
 }

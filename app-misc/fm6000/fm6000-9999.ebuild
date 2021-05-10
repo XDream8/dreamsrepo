@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit git-r3 toolchain-funcs
+inherit git-r3
 
 DESCRIPTION="Simple Dilbert themed system info-fetching tool "
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
@@ -19,6 +19,7 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_install() {
+
 	exeinto /usr/bin
 	newexe "${WORKDIR}"/"${P}"/fm6000.pl fm6000
 

@@ -7,15 +7,16 @@ inherit meson
 
 DESCRIPTION="Schemas for instawm"
 HOMEPAGE="https://github.com/The-Repo-Club/instawm-schemas"
-SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz"
+SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-util/ninja
-        dev-util/meson"
+DEPEND=""
+RDEPEND="${DEPEND}"
+BDEPEND=""
 
 src_compile() {
 	meson_src_compile
@@ -24,7 +25,6 @@ src_compile() {
 src_install() {
 	meson_src_install
 
-	exeinto /usr/bin
-	newexe "${WORKDIR}"/"${P}"/instawm-schemas instawm-schemas
+	dobin "${S}"/instawm-schemas
 
 }
