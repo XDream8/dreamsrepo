@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/anhsirk0/fetch-master-6000"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="+ascii_arts"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
@@ -21,5 +21,10 @@ BDEPEND=""
 src_install() {
 
 	newbin "${S}"/fm6000.pl fm6000
+
+	if use ascii_arts; then
+		insinto /usr/share/fm6000
+		doins -r "${S}"/ascii_arts
+	fi
 
 }
