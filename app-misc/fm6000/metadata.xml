@@ -5,4 +5,7 @@
 		<email>ism.frat@hotmail.com</email>
 		<name>XDream8</name>
 	</maintainer>
+	<use>
+		<flag name="ascii_arts">install default ascii_arts to /usr/share/fm6000</flag>
+	</use>
 </pkgmetadata>
