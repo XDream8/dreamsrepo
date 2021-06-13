@@ -13,7 +13,6 @@ My Repository for Gentoo
 
 ## Packages
 * [app-misc/fm6000](docs/fm6000.md)
-* [dev-util/lazygit](docs/lazygit.md)
 * [x11-misc/instawm-schemas](docs/instawm-schemas.md)
 * [x11-misc/wm-maim](docs/wm-maim.md)
 * [x11-wm/instawm](docs/instawm.md)
