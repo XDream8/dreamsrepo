@@ -13,7 +13,8 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="media-gfx/maim
-		x11-misc/xclip"
+		x11-misc/xclip
+		x11-misc/xdotool"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
