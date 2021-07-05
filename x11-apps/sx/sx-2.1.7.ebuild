@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit eutils
-
 DESCRIPTION="Start an xorg server"
 HOMEPAGE="https://github.com/Earnestly/sx"
 SRC_URI="https://github.com/Earnestly/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
