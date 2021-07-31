@@ -12,16 +12,25 @@ SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="xinerama"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+		 xinerama? ( x11-libs/libXinerama )"
 BDEPEND=""
 
 src_prepare() {
 	default
 
 	restore_config config.h
+}
+
+src_compile() {
+	if use xinerama; then
+        emake CC=$(tc-getCC) instamenu
+    else
+        emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" instamenu
+    fi
 }
 
 src_install() {
