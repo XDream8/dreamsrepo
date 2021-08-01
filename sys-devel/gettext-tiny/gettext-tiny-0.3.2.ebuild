@@ -38,9 +38,9 @@ src_compile() {
 
 src_install() {
 	if use elibc_glibc; then
-		emake LIBINTL=NOOP DESTDIR=pkgdir prefix=/usr install
+		emake LIBINTL=NOOP DESTDIR="${D}" prefix=/usr install
 	elif use elibc_musl; then
-		emake LIBINTL=MUSL DESTDIR=pkgdir prefix=/usr install
+		emake LIBINTL=MUSL DESTDIR="${D}" prefix=/usr install
 	fi
 	ewarn "don't forget to add sys-devel/gettext to /etc/portage/profile/package.provided to get full function of gettext-tiny"
 }
