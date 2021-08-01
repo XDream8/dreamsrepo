@@ -11,7 +11,7 @@ SRC_URI="https://github.com/sineemore/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar
 
 S=${WORKDIR}/${PN}-ee81b0ba86c372456731b67fb16acf864f83ece4
 
-LICENSE="Free"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
