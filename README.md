@@ -12,7 +12,25 @@ My Repository for Gentoo
 ```
 
 ## Packages
-* [app-misc/fm6000](docs/fm6000.md)
-* [x11-misc/instawm-schemas](docs/instawm-schemas.md)
-* [x11-misc/wm-maim](docs/wm-maim.md)
-* [x11-wm/instawm](docs/instawm.md)
+**app-misc/** \
+	[fm6000](app-misc/fm6000)
+**net-misc/** \
+	[sdhcp](net-misc/sdhcp)
+**sys-apps/** \
+	[sbase](sys-apps/sbase)
+	[ubase](sys-apps/ubase)
+**sys-devel/** \
+	[gettext-tiny](sys-devel/gettext-tiny)
+**sys-libs/** \
+	[netbsd-curses](sys-libs/netbsd-curses)
+**x11-apps/** \
+	[sx](x11-apps/sx)
+	[sxinit](x11-apps/sxinit)
+**x11-misc/**
+	[repomenu](x11-misc/repomenu)
+	[repomenu-extra](x11-misc/repomenu-extra)
+	[repomenu-schemas](x11-misc/repomenu-schemas)
+	[repowm-schemas](x11-misc/repowm-schemas)
+	[wm-maim](x11-misc/wm-maim)
+**x11-wm/**
+	[repowm](x11-wm/repowm)

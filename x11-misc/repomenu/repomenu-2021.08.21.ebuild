@@ -6,7 +6,7 @@ EAPI=7
 inherit savedconfig
 
 DESCRIPTION="insta dynamic menu"
-HOMEPAGE="https://github.com/The-Repo-Club/instamenu"
+HOMEPAGE="https://github.com/The-Repo-Club/repomenu"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
@@ -27,9 +27,9 @@ src_prepare() {
 
 src_compile() {
 	if use xinerama; then
-        emake CC=$(tc-getCC) instamenu
+        emake CC=$(tc-getCC) repomenu
     else
-        emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" instamenu
+        emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" repomenu
     fi
 }
 

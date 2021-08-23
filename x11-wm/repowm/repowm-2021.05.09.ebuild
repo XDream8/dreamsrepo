@@ -5,7 +5,7 @@ EAPI=7
 inherit savedconfig toolchain-funcs
 
 DESCRIPTION="a dynamic window manager for X11"
-HOMEPAGE="https://github.com/The-Repo-Club/instawm"
+HOMEPAGE="https://github.com/The-Repo-Club/repowm"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
@@ -37,14 +37,14 @@ src_prepare() {
 
 src_compile() {
 	if use xinerama; then
-		emake CC=$(tc-getCC) instawm
+		emake CC=$(tc-getCC)
 	else
-		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" instawm
+		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS=""
 	fi
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	emake DESTDIR="${D}" PREFIX="/usr" install
 
 	dodoc README.md
 

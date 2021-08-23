@@ -3,25 +3,23 @@
 
 EAPI=7
 
-inherit meson
-
-DESCRIPTION="Schemas for instamenu"
-HOMEPAGE="https://github.com/The-Repo-Club/instamenu-schemas"
+DESCRIPTION="Instamenu extra scripts"
+HOMEPAGE="https://github.com/The-Repo-Club/repomenu-extra"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="x11-misc/repomenu"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_compile() {
-	meson_src_compile
+	:
 }
 
 src_install() {
-	meson_src_install
+	emake DESTDIR="${D}" PREFIX=/usr install
 }

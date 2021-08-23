@@ -5,8 +5,8 @@ EAPI=7
 
 inherit meson
 
-DESCRIPTION="Schemas for instawm"
-HOMEPAGE="https://github.com/The-Repo-Club/instawm-schemas"
+DESCRIPTION="Schemas for repoawm"
+HOMEPAGE="https://github.com/The-Repo-Club/repowm-schemas"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
@@ -25,6 +25,6 @@ src_compile() {
 src_install() {
 	meson_src_install
 
-	dobin "${S}"/instawm-schemas
+	dobin "${S}"/repowm-schemas
 
 }
