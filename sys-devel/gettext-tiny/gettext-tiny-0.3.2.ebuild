@@ -17,6 +17,8 @@ REQUIRED_USE="
 	!elibc_musl? ( elibc_glibc )
 "
 
+RDEPEND="!sys-devel/gettext"
+
 PATCHES=(
 	"${FILESDIR}/flip-macro-logic.patch"
 	"${FILESDIR}/line-length.patch"

@@ -12,9 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="!sys-libs/ncurses"
 
 PATCHES=(
 	"${FILESDIR}/0000-explicitly-add-required-CPPFLAGS-for-tic.patch"
@@ -31,4 +29,6 @@ src_install() {
 	ln -sf "${S}"/tic "${D}"/usr/bin/infotocap
 
 	ln -sf "${S}"/libterminfo.so "${D}"/usr/lib/libtinfo.so
+
+	ewarn "do not forget to add sys-libs/ncurses to /etc/portage/profile/package.provided"
 }
