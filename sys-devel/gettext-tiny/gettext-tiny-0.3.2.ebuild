@@ -17,11 +17,6 @@ REQUIRED_USE="
 	!elibc_musl? ( elibc_glibc )
 "
 
-DEPEND="virtual/libiconv
-	virtual/libintl"
-RDEPEND="${DEPEND}"
-BDEPEND=""
-
 PATCHES=(
 	"${FILESDIR}/flip-macro-logic.patch"
 	"${FILESDIR}/line-length.patch"
