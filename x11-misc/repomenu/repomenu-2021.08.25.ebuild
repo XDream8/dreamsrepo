@@ -27,10 +27,10 @@ src_prepare() {
 
 src_compile() {
 	if use xinerama; then
-        emake CC=$(tc-getCC) repomenu
-    else
-        emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" repomenu
-    fi
+		emake CC=$(tc-getCC) repomenu
+	else
+		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" repomenu
+	fi
 }
 
 src_install() {

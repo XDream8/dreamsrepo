@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="libcurses and dependencies taken from netbsd and brought into a portable shape (at least to musl or glibc)"
+DESCRIPTION="libcurses and dependencies taken from netbsd and brought into a portable shape"
 HOMEPAGE="https://github.com/sabotage-linux/netbsd-curses"
 SRC_URI="https://github.com/sabotage-linux/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 

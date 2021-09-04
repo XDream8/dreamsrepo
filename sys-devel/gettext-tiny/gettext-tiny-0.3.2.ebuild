@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="stub and/or lightweight replacements of the gnu gettext suite(with alpine linux patch set)"
+DESCRIPTION="stub and/or lightweight replacements of the gnu gettext suite(+alpine patches)"
 HOMEPAGE="https://github.com/sabotage-linux/gettext-tiny"
 SRC_URI="https://github.com/sabotage-linux/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 

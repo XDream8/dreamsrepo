@@ -5,7 +5,7 @@ EAPI=7
 
 inherit git-r3
 
-DESCRIPTION="ubase is a collection of unportable tools, similar in spirit to util-linux but much simpler. (It is packaged to replace util-linux)"
+DESCRIPTION="collection of unportable tools, similar in spirit to util-linux but much simpler"
 HOMEPAGE="http://core.suckless.org/ubase/"
 EGIT_REPO_URI="http://git.suckless.org/ubase"
 

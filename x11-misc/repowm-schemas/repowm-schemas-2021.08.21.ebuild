@@ -5,7 +5,7 @@ EAPI=7
 
 inherit meson
 
-DESCRIPTION="Schemas for repoawm"
+DESCRIPTION="Schemas for repowm"
 HOMEPAGE="https://github.com/The-Repo-Club/repowm-schemas"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
