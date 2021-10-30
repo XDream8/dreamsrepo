@@ -9,7 +9,7 @@ DESCRIPTION="Schemas for instamenu"
 HOMEPAGE="https://github.com/The-Repo-Club/repomenu-schemas"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""

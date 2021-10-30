@@ -3,21 +3,21 @@
 
 EAPI=7
 
-DESCRIPTION="maim (make image) takes screenshots of your desktop."
-HOMEPAGE="https://github.com/The-Repo-Club/wm-maim"
+DESCRIPTION="Takes screenshots of your desktop."
+HOMEPAGE="https://github.com/The-Repo-Club/win-shot"
 SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="media-gfx/maim
+DEPEND="media-gfx/imagemagick
 		x11-misc/xclip
 		x11-misc/xdotool"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_install() {
-	dobin "${S}"/usr/bin/wm-maim
+	dobin "${S}"/usr/bin/win-shot
 }
