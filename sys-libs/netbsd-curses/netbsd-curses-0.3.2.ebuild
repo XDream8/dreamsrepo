@@ -25,10 +25,10 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" PREFIX=/usr install-dynamic
 
-	ln -sf "${S}"/tic "${D}"/usr/bin/captoinfo
-	ln -sf "${S}"/tic "${D}"/usr/bin/infotocap
+	ln -sf "${D}"/usr/bin/tic "${D}"/usr/bin/captoinfo
+	ln -sf "${D}"/usr/bin/tic "${D}"/usr/bin/infotocap
 
-	ln -sf "${S}"/libterminfo.so "${D}"/usr/lib/libtinfo.so
+	ln -sf "${D}"/usr/lib/libterminfo.so "${D}"/usr/lib/libtinfo.so
 
 	ewarn "do not forget to add sys-libs/ncurses to /etc/portage/profile/package.provided"
 }

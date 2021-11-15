@@ -13,7 +13,7 @@ KEYWORDS="~amd64"
 IUSE="elibc_glibc elibc_musl"
 
 REQUIRED_USE="
-	!elibc_glibc? ( elibc_musl )
+	elibc_musl? ( elibc_musl )
 	!elibc_musl? ( elibc_glibc )
 "
 

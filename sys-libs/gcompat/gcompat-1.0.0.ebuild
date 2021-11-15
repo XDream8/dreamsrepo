@@ -3,11 +3,11 @@
 
 EAPI=7
 
-DESCRIPTION="The GNU C Library Compatibility Layer for Adélie Linux"
+DESCRIPTION="The GNU C Library Compatibility Layer for Adelie Linux"
 HOMEPAGE="https://git.adelielinux.org/adelie/gcompat"
 SRC_URI="https://git.adelielinux.org/adelie/${PN}/-/archive/${PV}/${P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="Free"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
