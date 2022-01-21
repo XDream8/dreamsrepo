@@ -42,7 +42,6 @@ DEPEND="media-libs/mesa:=
 		sys-apps/pciutils:=
 		x11-libs/cairo:=
 		x11-libs/gdk-pixbuf:2
-		x11-libs/libxkbcommon:=
 		x11-libs/pango:=
 
 		>=app-accessibility/at-spi2-atk-2.26:2
@@ -51,7 +50,6 @@ DEPEND="media-libs/mesa:=
 		x11-libs/gtk+:3[X]
 		"
 RDEPEND="${DEPEND}
-	x11-misc/xdg-utils
 	virtual/opengl
 	virtual/ttf-fonts
 	!www-client/ungoogled-chromium-bin"

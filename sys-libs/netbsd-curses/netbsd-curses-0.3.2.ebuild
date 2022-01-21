@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="libcurses and dependencies taken from netbsd and brought into a portable shape"
 HOMEPAGE="https://github.com/sabotage-linux/netbsd-curses"
-SRC_URI="https://github.com/sabotage-linux/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://ftp.barfooze.de/pub/sabotage/tarballs/${PN}-${PV}.tar.xz -> ${P}.tar.xz"
 
 LICENSE="MIT"
 SLOT="0"
