@@ -15,7 +15,8 @@ KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+		gnome-base/gsettings-desktop-schemas"
 BDEPEND=""
 
 src_compile() {
