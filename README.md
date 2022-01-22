@@ -14,6 +14,8 @@ My Repository for Gentoo
 ## Packages
 * **app-misc/**
 	*	[fm6000](app-misc/fm6000)
+* **dev-libs/**
+	*	[libedit](dev-libs/libedit)
 * **net-misc/**
 	*	[sdhcp](net-misc/sdhcp)
 * **sys-apps/**
@@ -31,6 +33,6 @@ My Repository for Gentoo
 	*	[repomenu-extra](x11-misc/repomenu-extra)
 	*	[repomenu-schemas](x11-misc/repomenu-schemas)
 	*	[repowm-schemas](x11-misc/repowm-schemas)
-	*	[wm-maim](x11-misc/wm-maim)
+	*	[win-shot](x11-misc/win-shot)
 * **x11-wm/**
 	*	[repowm](x11-wm/repowm)
