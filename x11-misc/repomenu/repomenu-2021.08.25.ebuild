@@ -12,11 +12,11 @@ SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="xinerama"
+IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}
-		 xinerama? ( x11-libs/libXinerama )"
+	x11-libs/libXinerama"
 BDEPEND=""
 
 src_prepare() {
@@ -26,11 +26,7 @@ src_prepare() {
 }
 
 src_compile() {
-	if use xinerama; then
-		emake CC=$(tc-getCC) repomenu
-	else
-		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" repomenu
-	fi
+	emake CC=$(tc-getCC) repomenu
 }
 
 src_install() {
