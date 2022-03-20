@@ -54,8 +54,10 @@ RDEPEND="${DEPEND}
 	virtual/ttf-fonts
 	!www-client/ungoogled-chromium-bin"
 
+QA_PREBUILT="opt/ungoogled-chromium/*"
+
 src_install() {
-	mkdir -p "${D}"/opt "${D}"/usr/bin
-	cp -r "${S}" "${D}"/opt/ungoogled-chromium
-	ln -sf "${D}"/opt/ungoogled-chromium/chrome "${D}"/usr/bin/chromium
+	mkdir -p "${D}"/opt "${D}"/usr/bin || die
+	cp -r "${S}" "${D}"/opt/ungoogled-chromium || die
+	ln -sf "${D}"/opt/ungoogled-chromium/chrome "${D}"/usr/bin/chromium || die
 }

@@ -3,14 +3,17 @@
 
 EAPI=7
 
-inherit git-r3
+COMMIT=217b6e323fbdf5e066ad2fbe3be58f5781fd4a38
 
 DESCRIPTION="Simple Dilbert themed system info-fetching tool"
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
-EGIT_REPO_URI="https://github.com/anhsirk0/fetch-master-6000"
+SRC_URI="https://github.com/anhsirk0/fetch-master-6000/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+
+S=${WORKDIR}/fetch-master-6000-${COMMIT}
 
 LICENSE="GPL-3"
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="+ascii_arts"
 
 DEPEND=""
@@ -23,5 +26,4 @@ src_install() {
 	if use ascii_arts; then
 		dodoc -r "${S}"/ascii_arts
 	fi
-
 }
