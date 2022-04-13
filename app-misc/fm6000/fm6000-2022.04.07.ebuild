@@ -1,9 +1,9 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-COMMIT=217b6e323fbdf5e066ad2fbe3be58f5781fd4a38
+COMMIT=152d155e01a04a4b3a9712f2f059e74e6e1408dc
 
 DESCRIPTION="Simple Dilbert themed system info-fetching tool"
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
