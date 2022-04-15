@@ -1,0 +1,14 @@
+#compdef rdo
+
+local environ e cmd
+local -a _comp_priv_prefix
+
+zstyle -a ":completion:${curcontext}:" environ environ
+
+for e in "${environ[@]}"
+do local -x "$e"
+done
+
+cmd="$words[1]"
+_arguments -s -S -A '-*' : \
+  '*::arguments:{ _comp_priv_prefix=( $cmd -n ${(kv)opt_args[-u]} ) ; _normal }'
