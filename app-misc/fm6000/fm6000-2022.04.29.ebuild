@@ -3,7 +3,7 @@
 
 EAPI=8
 
-COMMIT=152d155e01a04a4b3a9712f2f059e74e6e1408dc
+COMMIT=327b6b5c6e648deec83af63aec7db6950072f819
 
 DESCRIPTION="Simple Dilbert themed system info-fetching tool"
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
