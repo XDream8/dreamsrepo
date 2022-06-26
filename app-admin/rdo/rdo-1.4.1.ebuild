@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+zsh-completion"
 
-RDEPEND="dev-libs/libbsd"
+RDEPEND=""
 DEPEND=${RDEPEND}
 
 src_compile() {
