@@ -11,10 +11,11 @@ EGIT_REPO_URI="https://github.com/anhsirk0/fetch-master-6000"
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="+ascii_arts"
+IUSE="ascii_arts"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+		dev-lang/perl"
 BDEPEND=""
 
 src_install() {

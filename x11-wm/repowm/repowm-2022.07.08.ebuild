@@ -11,7 +11,7 @@ SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="xinerama"
+IUSE="+xinerama"
 
 RDEPEND="
 	media-libs/fontconfig
@@ -28,9 +28,11 @@ src_prepare() {
 	default
 
 	sed -i \
-		-e "s/ -Os / /" \
-		-e "/^\(LDFLAGS\|CFLAGS\|CPPFLAGS\)/{s| = | += |g;s|-s ||g}" \
-		config.mk || die
+    	-e "s/ -Os / /" \
+    	-e "/^\(LDFLAGS\|CFLAGS\|CPPFLAGS\)/{s| = | += |g;s|-s ||g}" \
+    	-e "/^X11LIB/{s:/usr/X11R6/lib:/usr/$(get_libdir)/X11:}" \
+    	-e '/^X11INC/{s:/usr/X11R6/include:/usr/include/X11:}' \
+    	config.mk || die
 
 	restore_config config.h
 }
@@ -44,8 +46,15 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="/usr" install
+	for i in repowm repobar repoopen layoutmenu
+	do
+		dobin $i
+	done
 
+	insinto /usr/share/xsessions
+	doins repowm.desktop
+
+	doman "${S}"/repowm.1
 	dodoc README.md
 
 	save_config config.h

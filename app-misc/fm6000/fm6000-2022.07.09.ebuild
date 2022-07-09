@@ -3,7 +3,7 @@
 
 EAPI=8
 
-COMMIT=ec9e7802f9a399ebdf9acc90d014b6ea75a89fa3
+COMMIT=a6bb782bf4fe0e332f82483018092f9d5e548690
 
 DESCRIPTION="Simple Dilbert themed system info-fetching tool"
 HOMEPAGE="https://github.com/anhsirk0/fetch-master-6000"
@@ -14,10 +14,11 @@ S=${WORKDIR}/fetch-master-6000-${COMMIT}
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+ascii_arts"
+IUSE="ascii_arts"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+		dev-lang/perl"
 BDEPEND=""
 
 src_install() {
