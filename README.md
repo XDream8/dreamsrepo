@@ -22,21 +22,17 @@ My Repository for Gentoo
 	*	[samurai](dev-util/samurai) **ninja alternative (USE: system-ninja)** `# printf '%s\n' "dev-util/ninja-1.10.2-r1" >> /etc/portage/profile/package.provided`
 * **net-misc/**
 	*	[sdhcp](net-misc/sdhcp)
-* **sys-apps/**
-	*	[sbase](sys-apps/sbase)
-	*	[ubase](sys-apps/ubase)
 * **sys-devel/**
-	*	[gettext-tiny](sys-devel/gettext-tiny) **replace gettext ->** `# printf '%s\n' "sys-devel/gettext-0.21-r1" >> /etc/portage/profile/package.provided`
+	*	[gettext-tiny](sys-devel/gettext-tiny) **replace gettext ->** `# printf '%s\n' "sys-devel/gettext-0.21-r3" >> /etc/portage/profile/package.provided`
 * **sys-libs/**
-	*	[netbsd-curses](sys-libs/netbsd-curses) **replace ncurses ->** `# printf '%s\n' "sys-libs/ncurses-6.3_p20211106" >> /etc/portage/profile/package.provided`
+	*	[netbsd-curses](sys-libs/netbsd-curses) **replace ncurses ->** `# printf '%s\n' "sys-libs/ncurses-6.3_p20220423" >> /etc/portage/profile/package.provided`
 * **x11-apps/**
 	*	[sx](x11-apps/sx) **startx alternative**
 	*	[sxinit](x11-apps/sxinit)
 * **x11-misc/**
 	*	[repomenu](x11-misc/repomenu)
 	*	[repomenu-extra](x11-misc/repomenu-extra)
-	*	[repomenu-schemas](x11-misc/repomenu-schemas)
-	*	[repowm-schemas](x11-misc/repowm-schemas)
+	*	[repo-exec](x11-misc/repo-exec)
 	*	[win-shot](x11-misc/win-shot)
 * **x11-wm/**
 	*	[repowm](x11-wm/repowm)
