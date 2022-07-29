@@ -11,7 +11,7 @@ SRC_URI="https://github.com/The-Repo-Club/${PN}/archive/refs/tags/${PV}.tar.gz -
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+xinerama"
+IUSE="xinerama"
 
 RDEPEND="
 	media-libs/fontconfig
@@ -34,15 +34,18 @@ src_prepare() {
     	-e '/^X11INC/{s:/usr/X11R6/include:/usr/include/X11:}' \
     	config.mk || die
 
+	if ! use xinerama; then
+        sed -i \
+            -e "/XINERAMALIBS  = -lXinerama/d" \
+            -e "/XINERAMAFLAGS = -DXINERAMA/d" \
+            config.mk || die
+    fi
+
 	restore_config config.h
 }
 
 src_compile() {
-	if use xinerama; then
-		emake CC=$(tc-getCC) repowm
-	else
-		emake CC=$(tc-getCC) XINERAMAFLAGS="" XINERAMALIBS="" repowm
-	fi
+	emake repowm
 }
 
 src_install() {
